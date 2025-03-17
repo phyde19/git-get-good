@@ -1,6 +1,6 @@
 # Compact Git Reversal Toolkit
 
-## Core Commands
+### Core Commands
 
 ```bash
 git fetch origin
