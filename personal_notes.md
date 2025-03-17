@@ -29,13 +29,31 @@ git log --graph --oneline  # graph with compact view
 git branch                 # view branches
 ```
 
+### Branches
+```bash
+git branch -d my-branch
+```
+
 ### undo things
 ```bash
 git reset HEAD
+git reset --soft HEAD~1
+git reset --hard HEAD   # remove everything
 ```
 
 ### Remotes 
+```bash
+git clone https://github.com/phyde19/git-get-good.git  # sets origin
 
+# view remotes
+git remote -v 
+# add remote
+git remote add github https://github.com/phyde19/git-get-good.git
+
+# make changes 
+git push -u origin main         # push branch
+git push origin --delete main   # delete branch
+```
 
 ## Misc
 What is a bare repository? This is just a .git database without actual working files. This is the basis for what you get in a hosted repository platform like GitHub or Azure DevOps. 
